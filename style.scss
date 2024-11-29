@@ -1,0 +1,299 @@
+$main-blue: #b7e1f7;
+$teal: #75C9D1;
+body{
+    background-color: #020202;
+    color: white;
+    font-family: 'Architects Daughter', cursive;
+    font-size: 20px;
+    margin: 0;
+    padding-bottom: 100px; /* Adjust this value based on the footer height */
+    box-sizing: border-box;
+    overflow-x: hidden; /* Prevent horizontal scrolling */
+    padding: 0;
+    
+    width: 100%;
+  }
+  #image-banner {
+    position: relative;
+    width: 100%;
+    height: auto;
+    z-index: 1;
+  }
+  #five{
+    width: 40px;
+    pointer-events: none;
+    margin-bottom: -20px;
+  }
+  #right{
+    float: right;
+  }
+  h1{
+    font-size: 50px;
+    }
+    #logo{
+      margin-top: 10px;
+      margin-left: 5px;
+    }
+    #sizing{
+      margin: 2%;
+    }
+  #classical{
+    width: 50%;
+    float: left;
+    }
+  h2{
+    font-size: 35px;
+    color: $main-blue;
+  }
+  #script{
+    font-family: 'Great Vibes', cursive;
+    font-size: 40px;
+    letter-spacing: 1.5px;
+  }
+  .flex-container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .flex-container > div{
+    width: 400px;
+    margin: 10px;
+    text-align: center;
+  }
+  #intro{
+    width: 30%;
+    padding-left: 10%;
+    z-index: 20;
+  }
+  #welcome-text {
+    text-align: center; /* Center align the text */
+    margin-top: 60px; /* Space below the navbar */
+    margin-left: 10%;
+    background-color: rgba(0, 0, 0, 0.7); /* Optional background */
+    color: lightblue; /* Text color */
+    padding: 10px; /* Padding around the content */
+    float: left;
+    width: 40%;
+  }
+  
+  #welcome-text h2 {
+    margin-bottom: 10px; /* Space below the heading */
+  }
+  
+  #welcome-text p {
+    margin: 10px 0; /* Space above and below each paragraph */
+    line-height: 1.5; /* Adjust line spacing for readability */
+    color: white;
+  }
+  #mainpic{
+    float: right;
+    width: 100%;
+    margin-top: 80px;
+    margin-right: 50%;
+    flex: 1;
+  }
+  #content{
+    display: flex; /* Enables flexbox layout */
+    flex-direction: row; /* Ensures items are in a row */
+    justify-content: space-between; /* Adds space between elements */
+    align-items: center; /* Aligns text and image vertically */
+    width: 100%;
+  }
+  .clearfix::after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  #footer {
+    background-color: black;
+    padding: 2rem;
+    display: flex;
+    flex-direction: row; /* Ensure it arranges child elements in a row */
+    justify-content: center; /* Spread content evenly */
+    align-items: center; /* Align items vertically */
+    width: 100%;
+    margin-top: 20px; /* Add spacing above the footer */
+    clear: both; /* Ensure it clears floated elements above */
+    flex-shrink: 0;
+  }
+  
+  #footer #left, #footer #right {
+    flex: 1; /* Distribute space evenly */
+  }
+  
+  #footer ul#text {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  #footer #text li {
+    margin-bottom: 0.5rem;
+    line-height: 1.5;
+  }
+  
+  #footer #contact h2 {
+    color: $teal;
+    font-size: 3rem;
+    text-decoration: underline;
+  }
+  
+  #footer #contact #media a {
+    color: $teal;
+    font-size: 3rem;
+    margin-right: 1rem;
+    text-decoration: none;
+  }
+  
+  #footer #contact #media a:hover {
+    color: $main-blue;
+  }
+  
+  #footer iframe {
+    border: none;
+    border-radius: 5px;
+  }
+  
+
+  /* Nav Bar */
+.topnav {
+    position: sticky;
+    top: 0;
+    width: 100%;
+    background-color: #020202;
+    z-index: 10;
+    border-top: 2.5px solid $teal;
+    border-bottom: 2.5px solid $teal;
+    margin-bottom: 10px;
+}
+
+.topnav a {
+    font-size: 20px;
+    color: $teal;
+    background-color: #020202;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    display: inline-block;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+/* Dropdown button styles */
+.dropdown .dropbtn {
+    font-size: 20px;
+    border: none;
+    outline: none;
+    color: $teal;
+    padding: 14px;
+    padding-left: 30px;
+    background-color: inherit;
+    font-family: inherit;
+    margin: 0;
+}
+
+/* Dropdown content - hidden by default */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #020202;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    top: 100%; /* Position the dropdown below the button */
+}
+
+/* Show the dropdown when hovered */
+.dropdown:hover .dropdown-content {
+    display: block;
+    color: white;
+}
+/* Navbar link hover effect */
+.topnav a:hover {
+    color: white; /* Ensures navbar text turns white on hover */
+}
+/* Links inside the dropdown */
+.dropdown-content a {
+    color: $teal;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+/* Hover effect for links in dropdown */
+.dropdown-content a:hover {
+    color: white;
+}
+
+/* Mobile View Styles */
+@media screen and (max-width: 800px) {
+    /* Hide all navigation links except the hamburger icon */
+    .topnav a:not(:first-child), .topnav #right {
+        display: none;
+    }
+
+    /* Display the hamburger icon */
+    .topnav a.icon {
+        float: right;
+        display: block;
+        position: absolute;
+        right: 10px; /* Keeps the icon on the right */
+        top: 0px; /* Keeps the icon centered vertically */
+    }
+
+    /* Show menu when hamburger is clicked */
+    .topnav.responsive {
+        position: sticky;
+    }
+
+    .topnav.responsive a {
+        float: none;
+        display: block;
+        text-align: left;
+    }
+
+    .topnav.responsive #right {
+        display: block;
+    }
+
+    /* Dropdown in mobile */
+    .topnav.responsive .dropdown {
+        float: none;
+        background-color: black;
+        width: 100%;
+    }
+
+    .topnav.responsive .dropdown-content {
+        position: relative;
+    }
+
+    .topnav.responsive .dropdown .dropbtn {
+        display: block;
+        width: 100%;
+        text-align: left;
+    }
+
+    /* Show dropdown in mobile */
+    .topnav.responsive .dropdown:hover .dropdown-content {
+        display: block;
+        color: white;
+    }
+}
+
+/* Hide the hamburger icon in desktop view */
+@media screen and (min-width: 801px) {
+    .topnav a.icon {
+        display: none;
+    }
+}
+  /* End of Navbar */
+  @media (max-width: 768px) {
+    #welcome-text, #mainpic {
+        flex: 1 1 100%; /* Make each item take full width on smaller screens */
+        text-align: center; /* Center text on mobile */
+    }
+}

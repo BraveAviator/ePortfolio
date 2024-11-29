@@ -15,6 +15,8 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+
 <!--- End of Fonts --->
 <link rel="shortcut icon" type="image/png" href="favicon.png">
   </head>
@@ -22,7 +24,7 @@
     <script src="script.js"></script>
     <!-- Image Banner -->
 <div id="image-banner">
-  <img src="pictures/aileenplane.jpg" alt="Banner Image" style="width: 100%;">
+  <img src="pictures/aileenbanner.png" alt="Banner Image" style="width: 100%;">
 </div>
 
 <!-- Navbar -->
@@ -44,16 +46,35 @@
     </div>
     <a href="interests.html">Interests</a>
   </div>
+  <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
 </div>
 
 <!-- Welcome Text -->
-<div id="welcome-text">
-  <h2>Welcome to my ePortfolio!</h2>
-  <p>
-    Howdy! My name is Aileen Ng and I am currently a freshman General Engineering major at Texas A&M University hoping to major in Aerospace Engineering. My goal is to work as an aerospace engineer at NASA or any other major aerospace companies to further advance technology in the aerospace industry.
-  </p>
-  <br>
-  <p>Feel free to look at the other tabs to see more about me and my passions!</p>
+<div id="content" class="flex-container">
+  <div id="welcome-text">
+    <h2>Welcome to my ePortfolio!</h2>
+    <p>
+      Howdy! My name is Aileen Ng and I am currently a freshman General Engineering major at Texas A&M University hoping to major in Aerospace Engineering. My goal is to work as an aerospace engineer at NASA or any other major aerospace companies to further advance technology in the aerospace industry.
+    </p>
+    <br>
+    <p>Feel free to look at the other tabs to see more about me and my passions!</p>
+  </div>
+  <div>
+    <img id="mainpic" src="pictures/aileenformal.jpg" alt="head image">
+  </div>
+</div>
+
+<div id="footer" class="clearfix">
+  <div>
+    <div id="contact">
+      <h2>Contact</h2>
+      <div id="media">
+        <a href="https://www.linkedin.com/in/aileen-ng-b8860726a/" target="_blank"><i class="fab fa-linkedin"></i></a>
+        <a href="https://www.facebook.com/BraveAviator" target="_blank"><i class="fab fa-facebook"></i></a>
+        <a href="https://www.instagram.com/brave_av8er/" target="_blank"><i class="fab fa-instagram-square"></i></a>
+      </div>
+    </div>
+  </div>
 </div>
   </body>
 </html>
