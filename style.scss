@@ -44,11 +44,40 @@ body{
     font-size: 35px;
     color: $main-blue;
   }
+  h3{
+    color: $main-blue;
+  }
   #script{
     font-family: 'Great Vibes', cursive;
     font-size: 40px;
     letter-spacing: 1.5px;
   }
+  #futureplans{
+    width: 80%;
+    text-align: left;
+  }
+  #academics{
+    width: 80%;
+    text-align: left;
+  }
+  #workexperience{
+    width: 80%;
+  }
+  #workpic{
+    height: 380px;
+    padding-top: 30px;
+    width: auto;
+    margin: 0 20px;
+  }
+  #clarinetist{
+    width: 80%;
+    text-align: left;
+  }
+  .pdf-container {
+    width: 80%;
+    height: 1000px;
+    border: 1px solid #ccc;
+}
 /* Default desktop layout */
 #content {
   display: flex;
@@ -67,7 +96,13 @@ body{
   height: auto; /* Maintain aspect ratio */
   margin: 0 20px; /* Add side margins to the image */
 }
-
+#ftabpic{
+  width: 600px; /* Set a fixed width for the image */
+  padding-top: 30px;
+  padding-right: 30px;
+  height: auto; /* Maintain aspect ratio */
+  margin: 0 20px; /* Add side margins to the image */
+}
 #welcome-text {
   width: 50%; /* Make text take up 50% of the space */
   text-align: left; /* Keep the text aligned to the left */
@@ -81,13 +116,17 @@ body{
     align-items: center; /* Center both text and image */
     padding: 0 10px; /* Adjust padding for smaller screens */
   }
+  #ftabpic{
+    width: 90%;
+    padding: 0 10px; /* Adjust padding for smaller screens */
+    text-align: center;
+  }
 
   #welcome-text {
     width: 90%; /* Make text take up more space on mobile */
     text-align: center; /* Center align the text on mobile */
     margin-bottom: 20px; /* Add spacing below the text */
   }
-
   #mainpic {
     margin: 0 auto; /* Center the image */
     width: 60%;
