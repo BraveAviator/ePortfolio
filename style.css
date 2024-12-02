@@ -103,6 +103,7 @@ h3 {
 
 #workexperience {
   width: 80%;
+  text-align: left;
 }
 
 #workpic {
@@ -114,6 +115,7 @@ h3 {
 
 #londonpic {
   width: 300px;
+  padding-top: 30px;
 }
 
 #clarinetist {
@@ -125,6 +127,15 @@ h3 {
   width: 80%;
   height: 1000px;
   border: 1px solid #ccc;
+}
+
+.image-container {
+  align-items: flex-start; /* Align all images to the top */
+}
+
+.image-container img {
+  max-width: 100%; /* Keeps images responsive */
+  vertical-align: top; /* Ensure inline alignment for image edges */
 }
 
 /* Default desktop layout */
@@ -182,6 +193,9 @@ h3 {
     width: 60%;
     max-width: 100%; /* Ensure image scales down on mobile */
     margin-bottom: 20px; /* Add space below the image */
+  }
+  #workpic {
+    width: 80%;
   }
 }
 .clearfix::after {
