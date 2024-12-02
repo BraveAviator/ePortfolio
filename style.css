@@ -6,9 +6,39 @@ body {
   margin: 0;
   padding-bottom: 100px; /* Adjust this value based on the footer height */
   box-sizing: border-box;
-  overflow-x: hidden; /* Prevent horizontal scrolling */
+  /*overflow-x: hidden; /* Prevent horizontal scrolling */
   padding: 0;
   width: 100%;
+}
+
+body, html {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  max-width: 100%;
+  /*overflow-x: hidden;*/
+  background-color: #020202;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+#image-banner,
+.topnav,
+#footer,
+#content {
+  width: 100%;
+  max-width: 100%;
+}
+
+#image-banner img {
+  display: block;
+  width: 100%;
+  max-width: 100%;
+  height: auto;
 }
 
 #image-banner {
@@ -76,10 +106,14 @@ h3 {
 }
 
 #workpic {
-  height: 380px;
+  width: 400px;
   padding-top: 30px;
-  width: auto;
+  height: auto;
   margin: 0 20px;
+}
+
+#londonpic {
+  width: 300px;
 }
 
 #clarinetist {
