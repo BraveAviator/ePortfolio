@@ -124,11 +124,25 @@ h3 {
 }
 
 .pdf-container {
-  width: 80%;
-  height: 1000px;
-  border: 1px solid #ccc;
+  width: 90%; /* Adjust width for responsiveness */
+  max-width: 1000px; /* Set a maximum width for larger screens */
+  aspect-ratio: 12/9; /* Maintain a 16:9 aspect ratio */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
 }
 
+iframe {
+  width: 100%;
+  height: 100%;
+  border: none;
+}
+
+/* Media query for smaller screens */
+@media (max-width: 768px) {
+  .pdf-container {
+    width: 90%;
+    aspect-ratio: 1/1; /* Adjust aspect ratio for smaller screens */
+  }
+}
 .image-container {
   align-items: flex-start; /* Align all images to the top */
 }
