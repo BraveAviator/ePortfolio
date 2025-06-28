@@ -136,6 +136,46 @@ iframe {
   border: none;
 }
 
+/* --- Changes for #academics container for side-by-side layout --- */
+#academics {
+  display: flex; /* Added to make children flex items */
+  justify-content: space-around; /* Added for horizontal spacing */
+  align-items: flex-start; /* Added for top vertical alignment of sections */
+  max-width: 1200px; /* Adjusted/added for overall container width */
+  margin: 0 auto; /* Added to center the container */
+  padding: 20px; /* Added some internal padding */
+  flex-wrap: wrap; /* Added to allow sections to wrap on smaller screens */
+  gap: 40px; /* Added space between flex items (sections) */
+}
+
+/* --- New rule for wrapping each section (h2 + table) --- */
+.course-section {
+  flex: 1; /* Added to allow sections to grow and shrink */
+  min-width: 350px; /* Added a minimum width for sections before wrapping */
+}
+
+/* --- Changes within the table itself to fix overlap --- */
+table {
+  table-layout: fixed; /* Crucial: Ensures column widths are fixed, not content-driven */
+  margin-top: 10px; /* Added space between heading and table */
+}
+
+td {
+  padding-bottom: 5px; /* Reduced from 20px to allow more vertical space for wrapped text */
+  padding-top: 5px; /* Added for consistent vertical padding */
+  line-height: 1.4; /* Added to ensure adequate spacing between lines of wrapped text */
+}
+
+table td:first-child {
+  width: 150px; /* Adjusted from 120px: Critical to prevent course code overlap by making this column wide enough */
+  white-space: nowrap; /* Ensures the course code stays on a single line */
+}
+
+table td:nth-child(2) {
+  word-wrap: break-word; /* Ensures long words break and wrap */
+  overflow-wrap: break-word; /* Modern equivalent for word-wrap */
+}
+
 /* Media query for smaller screens */
 @media (max-width: 768px) {
   .pdf-container {
@@ -211,6 +251,14 @@ iframe {
   #workpic {
     width: 80%;
   }
+  #academics {
+    flex-direction: column; /* Stacks sections vertically on smaller screens */
+    align-items: center; /* Centers stacked sections */
+  }
+  .course-section {
+    min-width: 90%; /* Allows sections to take up more width when stacked */
+    max-width: 500px; /* Limits width when stacked */
+  }
 }
 .clearfix::after {
   content: "";
@@ -250,6 +298,7 @@ iframe {
   color: #75C9D1;
   font-size: 3rem;
   text-decoration: underline;
+  text-align: center;
 }
 
 #footer #contact #media a {
