@@ -54,6 +54,12 @@ body, html {
   margin-bottom: -20px;
 }
 
+#tamu {
+  width: 110px;
+  margin-bottom: -15px;
+  margin-left: -35px;
+}
+
 #right {
   float: right;
 }
