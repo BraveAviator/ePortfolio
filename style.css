@@ -119,6 +119,13 @@ h3 {
   margin: 0 20px;
 }
 
+#researchpic {
+  padding-top: 30px;
+  align-items: center; /* Vertically aligns the shorter image to the center of the taller one */
+  justify-content: center;
+  margin: 0 20px;
+}
+
 #londonpic {
   width: 300px;
   padding-top: 30px;
